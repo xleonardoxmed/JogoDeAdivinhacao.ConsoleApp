@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35825.156 d17.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JogoDeAdivinhacao.ConsoleApp", "JogoDeAdivinhacao.ConsoleApp\JogoDeAdivinhacao.ConsoleApp.csproj", "{5F670ED2-CF96-46A2-8D76-296AFD953CFA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5F670ED2-CF96-46A2-8D76-296AFD953CFA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F670ED2-CF96-46A2-8D76-296AFD953CFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F670ED2-CF96-46A2-8D76-296AFD953CFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F670ED2-CF96-46A2-8D76-296AFD953CFA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8BB0CE05-8E64-4868-8CE3-F9F91CC08AA3}
+	EndGlobalSection
+EndGlobal
