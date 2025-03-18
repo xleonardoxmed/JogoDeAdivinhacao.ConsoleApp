@@ -1,13 +1,13 @@
 ﻿using System.Reflection.Metadata.Ecma335;
 
 namespace JogoDeAdivinhacao.ConsoleApp
-{ 
+{
     internal class Program
     {
         static void Main(string[] args)
         {
-            
-           while(true)
+
+            while (true)
             {
                 string opcaoDificuldade = ExibirMenu();
                 int totalDeTentativas = Escolha(opcaoDificuldade);
@@ -17,7 +17,7 @@ namespace JogoDeAdivinhacao.ConsoleApp
                     break;
             }
         }
-       static string ExibirMenu()
+        static string ExibirMenu()
         {
             Console.Clear();
             Console.WriteLine("-----------------------------------------------");
@@ -34,9 +34,9 @@ namespace JogoDeAdivinhacao.ConsoleApp
             string opcaoDificuldade = Console.ReadLine()!;
             return opcaoDificuldade;
         }
-       static int Escolha(string opcaoDificuldade)
+        static int Escolha(string opcaoDificuldade)
         {
-     
+
             int totalDeTentativas = opcaoDificuldade switch // Alternar entre essas opções de acordo com a opcao selecionada
             {
                 "1" => 10,
@@ -47,13 +47,13 @@ namespace JogoDeAdivinhacao.ConsoleApp
 
             return totalDeTentativas;
         }
-       static int SelecaoNumeroSecreto()
+        static int SelecaoNumeroSecreto()
         {
             Random geradorNumeros = new Random();
             int numeroSecreto = geradorNumeros.Next(1, 21);
             return numeroSecreto;
         }
-       static void Logica(int totalDeTentativas, int numeroSecreto)
+        static void Logica(int totalDeTentativas, int numeroSecreto)
         {
             Console.Clear();
             Console.WriteLine("-----------------------------------------------");
@@ -93,10 +93,10 @@ namespace JogoDeAdivinhacao.ConsoleApp
                     Console.WriteLine("\nQue pena! Você não acertou... O número secreto era: " + numeroSecreto);
                     break;
                 }
-                
+
             }
         }
-       static bool FimdeJogo()
+        static bool FimdeJogo()
         {
             Console.WriteLine("Deseja Continuar? (S/N)");
             string continuar = Console.ReadLine()!.ToLower();
